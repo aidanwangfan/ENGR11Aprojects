@@ -74,17 +74,31 @@
         </div>
     </div>
 </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinkercad Remix Preparation</title>
+    <!-- Bootstrap CSS (Ensure this is included in your HTML file) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Project Card 2: Tinkercad Remix -->
 <div class="row gx-5 justify-content-center">
     <div class="col-lg-11 col-xl-9 col-xxl-8">
-        <!-- Project Card 2: Tinkercad Remix -->
         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
             <div class="card-body p-0">
                 <div class="p-5 text-center">
                     <h2 class="fw-bolder">Tinkercad Remix (Preparation before printing)</h2>
-                    <img class="float-image rounded shadow" 
-                        src="assets/Project2/3rd pokemon.png" 
-                        alt="Preparation Before Printing" 
-                        style="width: 500px; height: 300px; margin: 0 20px 20px 0;" />
+                    <!-- Image Container with Modal Trigger -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#pokemonModal">
+                        <img class="float-image rounded shadow" 
+                            src="assets/Project2/3rd pokemon.png" 
+                            alt="Preparation Before Printing" 
+                            style="width: 500px; height: 300px; margin: 0 20px 20px 0; cursor: pointer;" />
+                    </a>
                     <ol class="text-start mx-auto" style="max-width: 700px; line-height: 1.6; list-style-type: none; padding-left: 0;">
                         <li style="margin-bottom: 10px;">
                             <span style="color: #007bff; font-weight: bold;">1.</span> Download the Squirtle and Pokemon as STL files and import them into Tinkercad.
@@ -126,16 +140,51 @@
     </div>
 </div>
 
+<!-- Modal for Enlarged Image -->
+<div class="modal fade" id="pokemonModal" tabindex="-1" aria-labelledby="pokemonModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pokemonModalLabel">Preparation Before Printing</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="assets/Project2/3rd pokemon.png" class="img-fluid rounded shadow" alt="Preparation Before Printing" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (Ensure this is included at the bottom of your HTML file) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Print Reflection</title>
+    <!-- Bootstrap CSS (Ensure this is included in your HTML file) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Project Card: First Print -->
 <div class="row gx-5 justify-content-center">
     <div class="col-lg-11 col-xl-9 col-xxl-8">
-        <!-- Project Card: First Print -->
         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
             <div class="card-body p-0">
                 <div class="d-flex flex-column">
                     <div class="p-5" style="max-width: 100%;">
                         <!-- Image Container (Side by Side) -->
                         <div class="d-flex justify-content-center gap-3">
-                            <img class="img-fluid rounded shadow" src="assets/Project2/pokemonsupports.png" style="width: 350px; height: 250px; margin: 0 20px 20px 0;">
+                            <!-- Left Image with Modal Trigger -->
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#pokemonSupportModal">
+                                <img class="img-fluid rounded shadow" src="assets/Project2/pokemonsupports.png" style="width: 350px; height: 250px; margin: 0 20px 20px 0; cursor: pointer;">
+                            </a>
+                            <!-- Right Image without Modal -->
                             <img class="img-fluid rounded shadow" src="assets/Project2/pokemonflatprint.jpg" style="width: 350px; height: 250px; margin: 0 20px 20px 0;">
                         </div>
 
@@ -160,6 +209,27 @@
     </div>
 </div>
 
+<!-- Modal for Enlarged Left Image -->
+<div class="modal fade" id="pokemonSupportModal" tabindex="-1" aria-labelledby="pokemonSupportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pokemonSupportModalLabel">Support Structures for Tinkercad Print</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="assets/Project2/pokemonsupports.png" class="img-fluid rounded shadow" alt="Support Structures for Tinkercad Print" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (Ensure this is included at the bottom of your HTML file) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
 <!-- Project Card 2: Idea and Sketch -->
 <div class="row gx-5 justify-content-center">
     <div class="col-lg-11 col-xl-9 col-xxl-8">
@@ -179,20 +249,34 @@
     </div>
 </div>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Remix (Preparation before printing)</title>
+    <!-- Bootstrap CSS (Ensure this is included in your HTML file) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Project Card: Fusion Remix -->
 <div class="row gx-5 justify-content-center">
     <div class="col-lg-11 col-xl-9 col-xxl-8">
-        <!-- Project Card 2: Fusion Remix -->
         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
             <div class="card-body p-0">
                 <div class="p-5 text-center">
                     <h2 class="fw-bolder">Fusion Remix (Preparation before printing)</h2>
-                    <img class="float-image rounded shadow" 
-                        src="assets/Project2/mewtwofusion.png" 
-                        alt="Preparation Before Printing" 
-                        style="width: 500px; height: 300px; margin: 0 20px 20px 0;" />
+                    <!-- Image with Modal Trigger -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#mewtwoFusionModal">
+                        <img class="float-image rounded shadow" 
+                            src="assets/Project2/mewtwofusion.png" 
+                            alt="Preparation Before Printing" 
+                            style="width: 500px; height: 300px; margin: 0 20px 20px 0; cursor: pointer;" />
+                    </a>
                     <ol class="text-start mx-auto" style="max-width: 700px; line-height: 1.6; list-style-type: none; padding-left: 0;">
                         <li style="margin-bottom: 10px;">
-                            <span style="color: #007bff; font-weight: bold;">1.</span>  Download the Mewtwo and tennis racket as STL files and import them into Tinkercad.
+                            <span style="color: #007bff; font-weight: bold;">1.</span> Download the Mewtwo and tennis racket as STL files and import them into Tinkercad.
                         </li>
                         <li style="margin-bottom: 10px;">
                             <span style="color: #007bff; font-weight: bold;">2.</span> Drag the tennis racket to fit into Mewtwo’s hand.
@@ -210,7 +294,7 @@
                             <span style="color: #007bff; font-weight: bold;">6.</span> Adjust the print settings, including layer height, infill percentage, and print speed.
                         </li>
                         <li style="margin-bottom: 10px;">
-                            <span style="color: #007bff; font-weight: bold;">7.</span> Because one of my classmates did a print with a tennis racket in the past, I knew I had to add support (organic for easier removal) in order for it not to fail. 
+                            <span style="color: #007bff; font-weight: bold;">7.</span> Because one of my classmates did a print with a tennis racket in the past, I knew I had to add support (organic for easier removal) in order for it not to fail.
                         </li>
                         <li style="margin-bottom: 10px;">
                             <span style="color: #007bff; font-weight: bold;">8.</span> Slice the file and carefully check that all supports are correctly aligned.
@@ -230,23 +314,47 @@
         </div>
     </div>
 </div>
+
+<!-- Modal for Enlarged Image -->
+<div class="modal fade" id="mewtwoFusionModal" tabindex="-1" aria-labelledby="mewtwoFusionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mewtwoFusionModalLabel">Fusion Remix - Mewtwo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="assets/Project2/mewtwofusion.png" class="img-fluid rounded shadow" alt="Fusion Remix - Mewtwo" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (Ensure this is included at the bottom of your HTML file) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
 <div class="row gx-5 justify-content-center">
     <div class="col-lg-11 col-xl-9 col-xxl-8">
+        
         <!-- Project Card: First Print -->
         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
             <div class="card-body p-0">
                 <div class="d-flex flex-column">
                     <div class="p-5" style="max-width: 100%;">
-                        <!-- Image Container (First Image at the Top) -->
+                        <!-- Image Container (First Image at the Top) with Modal Trigger -->
                         <div class="d-flex justify-content-center gap-3">
-                            <img class="img-fluid rounded shadow" src="assets/Project2/printsettingsm2.png" style="width: 510px; height: 270px; margin-right: 20px;">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#fusionPrintModal">
+                                <img class="img-fluid rounded shadow" src="assets/Project2/printsettingsm2.png" style="width: 510px; height: 270px; margin-right: 20px; cursor: pointer;" />
+                            </a>
                         </div>
-
+        
                         <h3 class="fw-bolder mt-4">Reflection for Fusion Print</h3>
                         <p>
                             For my second 3D print, I transitioned from Tinkercad to Fusion 360, which was a much tougher experience. Unlike Tinkercad’s simple drag and drop, Fusion 360 required a much better understanding of 3D modeling tools, constraints, and parametric design. It took some time to get comfortable with the software, but it also gave me much more control over fine details and precision. One of the toughest challenges I faced was figuring out how to work with constraints. Sometimes, making a small change would cause other parts to move in ways I didn’t expect, which made me have to backtrack and fix things. It was frustrating, but it helped me get better at using the software. However, that being said, the final print turned out perfectly, which was a huge surprise to me because it was such a complex design. All the little details were spot on, especially the strings on the tennis racket. Next time, I would pay better attention to the size of the racket as it actually goes further down the base, restricting me from taking out the supports that were placed below the structure. 
                         </p>
-
+        
                         <!-- CAM Settings Section (Left) and Mewtwo Image (Right) -->
                         <div class="d-flex justify-content-between align-items-center mt-4">
                             <div class="w-50">
@@ -259,22 +367,39 @@
                                     <li><strong>Infill Percentage:</strong> 15%</li>
                                 </ul>
                             </div>
-
-                            <!-- Second Image (Mewtwo) on the Right -->
+        
+                            <!-- Second Image (Mewtwo) on the Right (No Modal for this one) -->
                             <div class="w-50">
                                 <img class="img-fluid rounded shadow" src="assets/Project2/mewtwo.jpg" style="width: 350px; height: 250px;">
                             </div>
                         </div>
-
+        
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        
+        <!-- Modal for Enlarged Top Image -->
+        <div class="modal fade" id="fusionPrintModal" tabindex="-1" aria-labelledby="fusionPrintModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fusionPrintModalLabel">Fusion Print - Print Settings</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="assets/Project2/printsettingsm2.png" class="img-fluid rounded shadow" alt="Fusion Print Settings" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap JS (Ensure this is included at the bottom of your HTML file) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
 
 <div class="row gx-5 justify-content-center">
-    <div class="col-lg-11 col-xl-9 col-xxl-8">
+    <div class="col-lg-11 col-xl-9 col-xxl-8"></div>
         <!-- Project Card 1-->
         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
             <div class="card-body p-0">
