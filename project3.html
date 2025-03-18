@@ -113,7 +113,7 @@
 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
     <div class="card-body p-0">
         <div class="p-5" style="padding-bottom: 0;">
-            <h3 class="fw-bolder" style="margin-bottom: 25px;">Part II</h3>
+            <h3 class="fw-bolder" style="margin-bottom: 25px;">Part II: Design and 3D Print a Chassis Enclosure</h3>
             <p style="margin-top: 25px; margin-bottom: 5px;">
                 The next step of this project involved designing a chassis enclosure for the robot using 3D printing. To start, we measured the dimensions of the robot kit, using a digital caliper, to ensure the enclosure would fit properly. We then carefully planned the design to make sure it provided access to five key features. The design had to include openings for the wheels to move freely, spaces for the sensors to detect the ground, and clear areas to view the LEDs. Furthermore, we had to incorporate easy access points to change the batteries and press the power button. 
             </p>
@@ -265,6 +265,119 @@
         </div>
     </div>
 </div>
+
+<!---Part 3 section-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex flex-column" style="height: 100%;"> <!-- Ensuring the content fills the space -->
+
+            <!-- Text Section (above the images) -->
+            <div class="p-4" style="max-width: 100%; margin-bottom: 10px;"> <!-- Reduced margin-bottom -->
+                <h3 class="fw-bolder" style="margin-top: 0;">Part III: Design and Laser Cut a Chassis Enclosure</h3>
+                <p>
+                    To begin our last step of this project, my partner and I took precise measurements from our 3-D printed version to ensure accuracy. We followed a Youtube tutorial on constructing a finger joint box for laser cutting. Our first task was setting user parameters, which provided a standardized yet adjustable framework for the chassis dimensions. With these in place, we sketched a two-point rectangle, defining its height and width before adding finger joints—three small rectangles along one short edge, connected by a line. Using the equal constraint tool, we ensured uniformity in their size, and for the depth, we applied the ply parameter to maintain a 3mm thickness. These features were mirrored onto the opposite side, and the same process was repeated for the longer edges. Once extruded to 3mm, the base was complete. Moving on to the chassis walls, we created a new component and sketched directly onto the base’s edges. The walls were extruded using (-ply) to ensure they fit correctly over the base. The long side walls were mirrored across the origin plane, while the short walls required an additional step of projecting corners for a precise fit before being mirrored as well. With all components in place, the chassis design was finalized.
+                </p>
+            </div>
+
+            <!-- Image Container (Side by Side) -->
+            <div class="d-flex justify-content-between px-4 pb-2"> <!-- Reduced padding -->
+                <!-- First Image -->
+                <div class="d-flex justify-content-center" style="width: 48%;"> <!-- Adjusted width for each image -->
+                    
+                        <img class="img-fluid" src="assets/Project3/boxcutout1.png" style="width: 100%; height: auto; cursor: pointer; display: block;">
+                    </a>
+                </div>
+                <!-- Second Image -->
+                <div class="d-flex justify-content-center" style="width: 48%;"> <!-- Adjusted width for each image -->
+                    
+                        <img class="img-fluid" src="assets/Project3/boxcutout2.png" style="width: 100%; height: auto;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---Part 3 - first box section-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex flex-row" style="height: 100%;"> <!-- Changed to flex-row for side-by-side layout -->
+
+            <!-- Text Section (Left Side) -->
+            <div class="p-4" style="max-width: 50%; margin-right: 10px;"> <!-- Added margin-right for spacing -->
+                <h3 class="fw-bolder" style="margin-top: 0;">Part 3 - First Box</h3>
+                <p>
+                    For our first box, we focused on making sure it fit properly over the DIY kit rather than how it looked. Once the design was finalized, we created sketches of three faces: the bottom, one long side, and one short side. These sketches were then imported into Lightburn for laser cutting preparation. In Lightburn, we copied the long and short sides to create five pieces in total. After arranging the pieces neatly, we exported the file as a .lbrn2 onto a USB drive.
+                </p>
+                <p>
+                    We then connected the USB to the computer used for laser cutting. After reviewing the safety guidelines, we started the cutting process.
+                </p>
+                <h4 class="fw-bolder mt-4">Reflection for First Box</h4>
+                <p>
+                    The first laser cut fit the car well, with the base fitting perfectly. However, the walls were too tall, so we went back into the user parameters to adjust the height. We changed the height parameter to 70mm to ensure a better fit. Additionally, we used the hole function to cut out a wheel well for the back tire.
+                </p>
+            </div>
+
+            <!-- Image and Video Section (Right Side) -->
+            <div class="d-flex flex-column p-4" style="max-width: 50%;"> <!-- Flex column for stacking content -->
+                
+                <!-- Image Container -->
+                <div class="d-flex justify-content-center pb-2">
+                        <img class="img-fluid" src="assets/Project3/box.jpg" style="width: 100%; height: auto; cursor: pointer; display: block;">
+                    </a>
+                </div>
+
+                <!-- YouTube Video Embed -->
+                <div class="pt-3">
+                    <h4 class="fw-bolder">Check out the YouTube Video</h4>
+                    <div class="ratio" style="position: relative; padding-bottom: 70%;"> <!-- Custom aspect ratio with increased height -->
+                        <iframe src="https://www.youtube.com/embed/xftnMqYWHz0" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!---Part 3 - second print-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex flex-column">
+            <div class="p-5" style="max-width: 100%;">
+                <h3 class="fw-bolder">Part 3 - Second Box</h3>
+                <p>
+                    For the second box, we went back into Fusion 360 to make some adjustments. We began by changing the user parameters for the height from 120mm to 70mm. This reduced the height of the walls, allowing them to fit properly over the car. Another change we made was adding a hole in the roof of the box to provide access to the batteries. We used the hole tool to create a 29mm opening, which was slightly wider than the wheel well. An important step in this process was measuring the small section of the PCB located just before the wheel well to ensure everything lined up correctly.
+                </p>
+                <h4 class="fw-bolder mt-4">Reflection for Second Box</h4>
+
+                <!-- Flexbox for text and image side by side -->
+                <div class="d-flex flex-row align-items-start mt-3">
+                    <div class="text-container">
+                        <p>
+                            In terms of improving the model, I think one key adjustment would be refining the cutouts for the wheels and sensors. By measuring those areas more precisely, we could reduce excess gaps and create a tighter fit around the key components. This would not only improve the overall look but also provide better protection for the internal parts. Another idea would be to reinforce the battery access area by adding a small hinged cover or latch to keep it secure during movement. This could be done by adding new features to the sketches and then extruding those elements to match the existing design.
+                        </p>
+                    </div>
+
+                    <!-- Image on the right of the text, adjusted to fit the second-to-last paragraph -->
+                    <div class="ms-4" style="flex-shrink: 0; width: 350px; height: 50px;">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img-src="assets/Project3/firstbox1.JPG">
+                            <img class="img-fluid" src="assets/Project3/finalbox.jpg" style="width: 80%; height: auto; cursor: pointer;">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- The last paragraph will go beneath the image -->
+                <p>
+                    Aside from the design improvements, one important lesson we learned was to stay organized throughout the CAD process. At one point, we accidentally deleted a key sketch layer and had trouble retracing my steps. After that, we made it a habit to label each part clearly in the timeline and create version checkpoints as we progressed. This small habit saved us a lot of time and stress later on. Overall, this stage of the project went smoothly, and I felt more confident working with Fusion 360 after overcoming these challenges.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
     </body>
 </html>
