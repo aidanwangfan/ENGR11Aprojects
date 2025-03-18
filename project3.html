@@ -84,166 +84,187 @@
 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
     <div class="card-body p-0">
         <div class="d-flex">
-            <!-- Text section on the left -->
+            <!-- Left Section: Text -->
             <div class="p-5" style="flex: 1;">
-                <h3 class="fw-bolder">Building Our Robot</h3>
+                <h3 class="fw-bolder">Building The Robot</h3>
                 <p>
-                    Before actually assembling the kit, my partner and I wanted to make sure we perfected our soldering skills. We referred to a Youtube Video that we found online and practiced on a soldering board. Furthermore, we decided to only use one of the two kits in case something went wrong then we could use the second kit. Luckily, we succeeded on our first one.
+                    Before actually assembling the kit, my partner and I wanted to make sure we perfected our soldering skills. We referred to a YouTube Video that we found online and practiced on a soldering board. Furthermore, we decided to only use one of the two kits in case something went wrong then we could use the second kit. Luckily, we succeeded on our first one.
+                </p>
+                <p>
+                    To assemble the D2-5 Intelligent Tracking Car DIY Kit, we followed these <a href="https://m.media-amazon.com/images/I/A1lEYFXJO1L.pdf" target="_blank">instructions</a>.
+                </p>
+                <p class="subtitle" style="margin-top: 20px; text-decoration: underline;">Process of building and reflection on how it went</p>
+                <p>
+                    Building the D2-5 Intelligent Tracking Car DIY Kit was both a challenging and rewarding experience. Even with all the soldering practice, we still ran into some issues during the assembly. Soldering was a bit tricky because we wanted to avoid creating solder bridges, which required extra care and precision. At one point, I accidentally burnt one of the wheels while soldering, which caused it to warp slightly. As a result, the wheel couldn’t spin properly and kept getting stuck. This affected the car’s movement, so my partner and I had to find a solution. Eventually, we replaced the damaged wheel with the spare one that we had, which solved the problem. Despite the small setback, the process taught us a lot about patience, problem solving, and the importance of careful soldering. In the end, overcoming these challenges made the final product feel even more rewarding.
                 </p>
             </div>
-            <!-- Video section on the right -->
-            <div style="flex: 1; padding: 20px;">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Qps9woUGkvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <!-- Right Section: Video first, then Image -->
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 20px;">
+                <!-- Lowered the video further with a bigger margin -->
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Qps9woUGkvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top: 80px;"></iframe>
+                <img class="img-fluid" src="assets/Project3/wheel1.jpg" width="270" height="200" alt="..." style="margin-top: 80px;"> <!-- Increased margin-top to move image further down -->
             </div>
         </div>
     </div>
 </div>
 
-                        
-                        <!-- Modal for Enlarged Name Tag Image -->
-                        <div class="modal fade" id="nameTagModal" tabindex="-1" aria-labelledby="nameTagModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="nameTagModalLabel">Setting for Name Tag</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body text-center">
-                                        <img src="assets/Project1/Settingfornametag.png" class="img-fluid rounded shadow" alt="Setting for Name Tag" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Bootstrap JS (Ensure this is included at the bottom of your HTML file) -->
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-                        
-                        </body>
-                        </html>
-                        
 
-                        <!DOCTYPE html>
-                        <html lang="en">
-                        <head>
-                            <meta charset="UTF-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                            <title>Image Lightbox with Bootstrap</title>
-                            <!-- Bootstrap CSS (Ensure this is included in your HTML file) -->
-                            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-                        </head>
-                        <body>
-                        
-                        <!-- Next section -->
-                        <br></br>
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex flex-column">
-                                    
-                                    <!-- Text Content Below (Left-Aligned) -->
-                                    <div class="p-5" style="max-width: 100%;">
-                        
-                                        <!-- Image Container on Top -->
-                                        <div class="d-flex justify-content-center mb-3">
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#tortureSettingsModal">
-                                                <img class="img-fluid" src="assets/Project1/torturesettings.png" width="350" height="350" alt="Torture Settings" style="cursor: pointer;">
-                                            </a>
-                                        </div>
-                        
-                                        <h3 class="fw-bolder">Torture Test</h3>
-                                        <p>
-                                            For my second 3D print (torture test), I selected a complex STL file designed to push the limits of the printer. The model included intricate details, overhangs, and thin structures, which tested the printer’s capability to handle challenging geometries.
-                                        </p>
-                                        
-                                        <p>
-                                            During the print, several issues arose, including poor adhesion on the finer details, stringing, and failure in printing the right arm cleanly. The right arm experienced deformation and an uneven surface. Through my knowledge of the 3D printer, I assume that the problems were likely caused by both support and cooling.
-                                        </p>
-                                        
-                                        <h4 class="fw-bolder mt-4">1. Supports</h4>
-                                        <p>
-                                            The failure in the right arm was primarily due to insufficient support. Overhangs in the model, such as the outstretched arm and other unsupported sections, lacked stability during the print. Without adequate support, the filament had no base to adhere to, leading to sagging, uneven layers, and a rough finish.
-                                        </p>
-                                        
-                                        <h4 class="fw-bolder mt-4">2. Cooling</h4>
-                                        <p>
-                                            Cooling also played a role, particularly for the right arm. For small and thin structures, like the arm and fingers, the layers did not have enough time to cool and solidify before the printer moved on to the next layer. This resulted in soft, warped layers. In addition, the lack of supports worsened the deformation.
-                                        </p>
-                                        
-                                        <h4 class="fw-bolder mt-4">3MF vs STL</h4>
-                                        <p>
-                                            Finally, comparing the 3MF file (used for slicing) to the STL file (a basic design file), I learned that the key difference between these two file types is that 3MF files can store additional data, including material, color, texture, orientation, supports, and printing parameters, whereas STL files cannot. As a result, the name tag print file automatically incorporated the color change, but an STL file would not be able to do so.
-                                        </p>
-                                        
-                                        <!-- CAM Settings Section -->
-                                        <h4 class="fw-bolder mt-4">CAM Settings for Second Print:</h4>
-                                        <ul>
-                                            <li><strong>Used Filament (g):</strong> 11.90</li>
-                                            <li><strong>Filament:</strong> Prusament PLA</li>
-                                            <li><strong>Printing Time:</strong> 2 Hours and 52 Minutes</li>
-                                            <li><strong>Layer Height:</strong> 0.3mm</li>
-                                            <li><strong>Infill Percentage:</strong> 15%</li>
-                                        </ul>
-                        
-                                        <!-- Image Container at the Bottom (No Modal for This One) -->
-                                        <div class="d-flex justify-content-center mt-3">
-                                            <img class="img-fluid" src="assets/Project1/Torturetest.png" width="325" height="300" alt="Torture Test">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Modal for Enlarged Torture Settings Image -->
-                        <div class="modal fade" id="tortureSettingsModal" tabindex="-1" aria-labelledby="tortureSettingsModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="tortureSettingsModalLabel">Torture Settings</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body text-center">
-                                        <img src="assets/Project1/torturesettings.png" class="img-fluid rounded shadow" alt="Torture Settings" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Bootstrap JS (Ensure this is included at the bottom of your HTML file) -->
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-                        
-                        </body>
-                        </html>
-                        
-   </div>
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="p-5" style="padding-bottom: 0;">
+            <h3 class="fw-bolder" style="margin-bottom: 25px;">Part II</h3>
+            <p style="margin-top: 25px; margin-bottom: 5px;">
+                The next step of this project involved designing a chassis enclosure for the robot using 3D printing. To start, we measured the dimensions of the robot kit, using a digital caliper, to ensure the enclosure would fit properly. We then carefully planned the design to make sure it provided access to five key features. The design had to include openings for the wheels to move freely, spaces for the sensors to detect the ground, and clear areas to view the LEDs. Furthermore, we had to incorporate easy access points to change the batteries and press the power button. 
+            </p>
+        </div>
+        <!-- Removed padding and margin here -->
+        <div class="text-center" style="margin-top: -5px;"> <!-- Slight negative margin-top to pull image closer -->
+            <img class="img-fluid" src="assets/Project3/Measurements.png" style="max-width: 100%; height: auto;" alt="Measurements" />
+        </div>
+    </div>
+</div>
 
-                    <div class="container px-5 mb-5">
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-11 col-xl-9 col-xxl-8">
-                                <!-- Project Card 1-->
-                                
-                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                    <div class="card-body p-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="p-5">
-                                                <h3 class="fw-bolder">Reflection</h3>
-                                                <p>
-                                                    Both prints taught me a lot about 3D printing. The name tag was a great way to get the hang of slicing and printing, while the torture test really showed me how tricky it can be to print more complex designs. Looking ahead, I plan to tweak my settings, especially for supports and cooling, to improve the overall print quality.
-                                                </p>
-                                                <p>
-                                                    With each project, I'm feeling more confident using the Prusa MINI+ and getting better at the whole process.
-                                                </p>
-                                                <p>
-                                                    I’m really excited to keep experimenting with new designs and learn even more about 3D printing along the way!
-                                                </p>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                
-                            </div>
-                        </div>
-                    </div>
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex flex-column">
+            <div class="p-5" style="max-width: 100%;">
+                <div class="d-flex gap-3 justify-content-center">
+                    <!-- Image 1 with modal trigger -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img-src="assets/Project3/firstbox1.JPG">
+                        <img class="img-fluid" src="assets/Project3/firstbox1.JPG" style="width: 350px; height: 250px; margin: 0 20px 20px 0; cursor: pointer;">
+                    </a>
+                    <!-- Image 2 with modal trigger -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img-src="assets/Project3/firstbox2.JPG">
+                        <img class="img-fluid" src="assets/Project3/firstbox2.JPG" style="width: 350px; height: 250px; margin: 0 20px 20px 0; cursor: pointer;">
+                    </a>
+                </div>
+
+                <h3 class="fw-bolder">Iteration 1</h3>
+                <p>
+                    For our first iteration, we decided to design and print a simple box. This allowed us to confirm that our measurements were accurate and that the box would fit as intended. This step helped us identify any potential sizing issues before moving forward with a more complex design.
+                </p>
+                <h4 class="fw-bolder mt-4">Reflection for Iteration 1</h4>
+                <p>
+                    Reflecting on the first iteration, the process went smoothly, and the final print fit perfectly. To ensure the print’s success, we added supports as a precaution, which proved to be a helpful decision. The supports provided extra stability, reducing the risk of failure. This successful print gave us confidence in our design process and prepared us for future iterations.
+                </p>
             </div>
-        </section>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Enlarged Image -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <!-- The image will be updated by Bootstrap automatically when modal is triggered -->
+                <img src="assets/Project3/firstbox1.JPG" class="img-fluid rounded shadow" alt="Enlarged Image" />
+                <img src="assets/Project3/firstbox2.JPG" class="img-fluid rounded shadow" alt="Enlarged Image" />
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex flex-column">
+            <!-- Image Container (First Image at the Top of the Page) -->
+            <div class="d-flex justify-content-center" style="margin-bottom: 0;">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#nameTagModal">
+                    <img class="img-fluid" src="assets/Project3/Second iteration.jpg" style="width: 350px; height: 250px; cursor: pointer; display: block;">
+                </a>
+            </div>
+
+            <div class="p-5" style="max-width: 100%; margin-top: -20px;">
+                <h3 class="fw-bolder" style="margin-top: 0;">Iteration 2</h3>
+                <p>
+                    By reflecting on our simple box design, we brainstormed ideas for a more complex and creative chassis. For our second iteration, we set a few goals. We wanted to improve the aesthetics while keeping the chassis lightweight to ensure the robot could still move freely. Similar to the first iteration, we began by designing a basic box. Using various tools in Fusion360, we introduced several improvements: rounding the chassis for a sleeker look and cutting out triangle-shaped windows to enhance the design. Additionally, we considered practical features, like adding large front and back windows to allow easier access to the batteries and power button.
+                </p>
+                <h4 class="fw-bolder mt-4">Reflection for Iteration 2</h4>
+                <p>
+                    Reflecting on our second iteration, we were happy with how the design evolved. The improved aesthetics made the chassis look more refined, and the added feature enhanced its practicality. The larger windows proved especially useful, making battery changes and accessing the power button much easier. This iteration showed clear progress from our initial design, and the successful print gave us confidence to push our ideas even further in the next version.
+                </p>
+            </div>
+
+            <!-- Image Container (Second Image at the Bottom) -->
+            <div class="d-flex justify-content-center" style="margin-top: -20px; margin-bottom: 20px;"> <!-- Adjusted margin-bottom here -->
+                <img class="img-fluid" src="assets/Project3/iteration2.jpg" style="width: 350px; height: 250px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---iteration 3 section-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex flex-column" style="height: 100%;"> <!-- Ensuring the content fills the space -->
+
+            <!-- Text Section (above the images) -->
+            <div class="p-4" style="max-width: 100%; margin-bottom: 10px;"> <!-- Reduced margin-bottom -->
+                <h3 class="fw-bolder" style="margin-top: 0;">Iteration 3</h3>
+                <p>
+                    For our final iteration, we aimed to really enhance the aesthetic appeal of the chassis while still incorporating the five essential design principles. Drawing inspiration from a UPS truck, we started with a simple box, just like iteration 1 and 2. Using the extrusion tool in Fusion360, we added key design elements such as doors, window, a roof, and a back door. The back door was included to improve access to the power switch, and we enlarged the front windows to ensure the LEDs were clearly visible. We maintained the same wheel diameter to guarantee a proper fit. The final design successfully combined functionality with visual appeal, fitting perfectly on the robot and allowing the wheels to move freely. 
+                </p>
+                <h4 class="fw-bolder mt-4">Reflection for Iteration 3</h4>
+                <p>
+                    Reflecting on our final iteration, we were especially proud of how polished and functional the design became. Incorporating elements like doors, a roof, and a back door gave the chassis a more complete look while improving accessibility. Enlarging the front windows was a valuable change, as it made the LEDs much easier to see. This iteration felt like the culmination of everything we learned from previous versions, resulting in a design that was both practical and visually appealing. 
+                </p>
+            </div>
+
+            <!-- Image Container (Side by Side) -->
+            <div class="d-flex justify-content-between px-4 pb-2"> <!-- Reduced padding -->
+                <!-- First Image -->
+                <div class="d-flex justify-content-center" style="width: 48%;"> <!-- Adjusted width for each image -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                        <img class="img-fluid" src="assets/Project3/iteraton3-1.jpg" style="width: 100%; height: auto; cursor: pointer; display: block;">
+                    </a>
+                </div>
+                <!-- Second Image -->
+                <div class="d-flex justify-content-center" style="width: 48%;"> <!-- Adjusted width for each image -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                        <img class="img-fluid" src="assets/Project3/iteration3-2.jpg" style="width: 100%; height: auto;">
+                    </a>
+                </div>
+            </div>
+
+            <!-- YouTube Video Embed -->
+            <div class="p-4">
+                <h4 class="fw-bolder">Check out the YouTube Video</h4>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/WlAIR5OfuCc" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for First Image -->
+<div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="assets/Project3/iteraton3-1.jpg" class="img-fluid" alt="Enlarged Image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Second Image -->
+<div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="assets/Project3/iteration3-2.jpg" class="img-fluid" alt="Enlarged Image">
+            </div>
+        </div>
+    </div>
+</div>
+
     </body>
 </html>
