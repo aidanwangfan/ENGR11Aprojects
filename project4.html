@@ -38,7 +38,7 @@
            <section class="py-5">
             <div class="container px-5 mb-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Project 1</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Project 4</span></h1>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
@@ -69,15 +69,15 @@
             <!-- Clickable Image -->
             <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                 <img class="float-image rounded shadow img-thumbnail" 
-                    src="assets/Project1/before printing.png" 
+                    src="assets/Project4/before print.png" 
                     alt="Preparation Before Printing" 
                     style="width: 500px; height: 300px; margin: 0 20px 20px 0; cursor: pointer;" />
             </a>
 
             <ol class="text-start" style="max-width: 700px; line-height: 1.6; list-style-type: none; padding-left: 0;">
-                <li style="margin-bottom: 10px;"><span style="color: #007bff; font-weight: bold;">1.</span> Download Prusa Slicer and Prusa MINI+.</li>
-                <li style="margin-bottom: 10px;"><span style="color: #007bff; font-weight: bold;">2.</span> Download the 3D model file you want to print and edit it in Prusa Slicer. Adjust the print settings, including layer height, infill percentage, and more.</li>
-                <li style="margin-bottom: 10px;"><span style="color: #007bff; font-weight: bold;">3.</span> Slice the file. “Slicing” refers to the process of converting a digital 3D model into a set of instructions (called G-code) that the 3D printer can understand.</li>
+                <li style="margin-bottom: 10px;"><span style="color: #007bff; font-weight: bold;">1.</span> Download the different hand part (STL files) off of e-NABLE and upload into Prusa Slicer.</li>
+                <li style="margin-bottom: 10px;"><span style="color: #007bff; font-weight: bold;">2.</span> Scale all the different file to 150%.</li>
+                <li style="margin-bottom: 10px;"><span style="color: #007bff; font-weight: bold;">3.</span> Fit all the different hand parts using 3 build plates.</li>
                 <li style="margin-bottom: 10px;"><span style="color: #007bff; font-weight: bold;">4.</span> Export the G-code into the USB drive formatted for the printer. Double-check that the file is saved with the correct extension and named appropriately for easy identification.</li>
                 <li style="margin-bottom: 10px;"><span style="color: #007bff; font-weight: bold;">5.</span> Insert the USB into the printer and navigate through the printer’s menu to locate the file.</li>
                 <li><span style="color: #007bff; font-weight: bold;">6.</span> Start the print and monitor the first few layers to ensure proper adhesion to the print bed. Make adjustments if necessary, such as leveling the bed or cleaning the nozzle.</li>
@@ -95,7 +95,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img src="assets/Project1/before printing.png" class="img-fluid rounded shadow" alt="Preparation Before Printing" />
+                <img src="assets/Project4/before print.png" class="img-fluid rounded shadow" alt="Preparation Before Printing" />
             </div>
         </div>
     </div>
@@ -112,23 +112,21 @@
                                     <div class="p-5" style="max-width: 100%;">
                                         <div class="d-flex gap-3 justify-content-center">
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#nameTagModal">
-                                                <img class="img-fluid" src="assets/Project1/Settingfornametag.png" style="width: 350px; height: 250px; margin: 0 20px 20px 0; cursor: pointer;">
+                                                <img class="img-fluid" src="assets/Project4/beforeprint.jpg" style="width: 350px; height: 250px; margin: 0 20px 20px 0; cursor: pointer;">
                                             </a>
-                                            <img class="img-fluid" src="assets/Project1/nametag 2.jpg" style="width: 350px; height: 250px; margin: 0 20px 20px 0;">
+                                            <img class="img-fluid" src="assets/Project4/handprint.jpg" style="width: 350px; height: 250px; margin: 0 20px 20px 0; cursor: pointer;">
                                         </div>
                         
-                                        <h3 class="fw-bolder">First Print: Name Tag</h3>
+                                        <h3 class="fw-bolder">Reflection on the Hand Print</h3>
                                         <p>
-                                            For my first print, using the Prusa MINI+ printer, I wanted to create a simpler project to explore its capabilities. I successfully created a 3D-printed name tag with my name, “Aidan Wang-Fan,” and achieved a crisp, clean color transition for the text. The process was pretty smooth, and I was impressed by how easily Prusa Slicer worked with the printer. The color change feature worked perfectly, adding a clean, professional-looking contrast to the text. However, the final print showed some sign of stringing. Stringing, also known as oozing, happens when small strings of filament are left behind as the extruder moves between different parts of the print. This might’ve happened because the extruder temperature was too high. For this project, we used PLA and printed at 215°C. At higher temperatures, the plastic is more likely to leak out during movement. Despite these minor setbacks, the project demonstrated the efficiency and reliability of the Prusa ecosystem, resulting in a visually appealing nametag. 
+                                            At first, I was able to fit all the parts onto two build plates, but then I realized we had to scale everything to 150%. This was important so that everyone could swap parts and assembling them would be easier. Because of this, we had to reorganize everything, and in the end, it took three build plates instead of two.
                                         </p>
-                                        <h4 class="fw-bolder mt-4">CAM Settings for First Print:</h4>
-                                        <ul>
-                                            <li><strong>Used Filament (g):</strong> 4.03</li>
-                                            <li><strong>Filament:</strong> Prusament PLA</li>
-                                            <li><strong>Printing Time:</strong> 22 minutes</li>
-                                            <li><strong>Layer Height:</strong> 0.2mm</li>
-                                            <li><strong>Infill Percentage:</strong> 15%</li>
-                                        </ul>
+                                    <p>
+                                        One of the biggest issues we ran into was with the pins for the hands. Since they had such a small surface touching the build plate, they didn’t stick well. To fix this, we added three layers of rafts to make sure they stayed in place. We also used organic supports, but only on the build plate, to help support the fingers while printing.
+                                    </p>
+                                    <p>
+                                        When the prints were finished, I didn’t notice any major problems, but the supports were still really hard to remove, even though they were organic supports. To make things easier in the future, the instructions could include more details on how to scale and organize parts efficiently. It would also help to have better guidelines on using supports and rafts, as well as some tips for removing supports without damaging the parts.
+                                    </p>
                                     </div>
                                 </div>
                             </div>
@@ -139,11 +137,11 @@
                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="nameTagModalLabel">Setting for Name Tag</h5>
+                                        <h5 class="modal-title" id="nameTagModalLabel">Before Print</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body text-center">
-                                        <img src="assets/Project1/Settingfornametag.png" class="img-fluid rounded shadow" alt="Setting for Name Tag" />
+                                        <img src="assets/Project4/beforeprint.jpg" class="img-fluid rounded shadow" alt="Setting for Name Tag" />
                                     </div>
                                 </div>
                             </div>
@@ -156,128 +154,123 @@
                         </html>
                         
 
-                        <!DOCTYPE html>
-                        <html lang="en">
-                        <head>
-                            <meta charset="UTF-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                            <title>Image Lightbox with Bootstrap</title>
-                            <!-- Bootstrap CSS (Ensure this is included in your HTML file) -->
-                            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-                        </head>
-                        <body>
                         
-                        <!-- Next section -->
-                        <br></br>
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex flex-column">
-                                    
-                                    <!-- Text Content Below (Left-Aligned) -->
-                                    <div class="p-5" style="max-width: 100%;">
-                        
-                                        <!-- Image Container on Top -->
-                                        <div class="d-flex justify-content-center mb-3">
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#tortureSettingsModal">
-                                                <img class="img-fluid" src="assets/Project1/torturesettings.png" width="350" height="350" alt="Torture Settings" style="cursor: pointer;">
-                                            </a>
-                                        </div>
-                        
-                                        <h3 class="fw-bolder">Torture Test</h3>
-                                        <p>
-                                            For my second 3D print (torture test), I selected a complex STL file designed to push the limits of the printer. The model included intricate details, overhangs, and thin structures, which tested the printer’s capability to handle challenging geometries.
-                                        </p>
-                                        
-                                        <p>
-                                            During the print, several issues arose, including poor adhesion on the finer details, stringing, and failure in printing the right arm cleanly. The right arm experienced deformation and an uneven surface. Through my knowledge of the 3D printer, I assume that the problems were likely caused by both support and cooling.
-                                        </p>
-                                        
-                                        <h4 class="fw-bolder mt-4">1. Supports</h4>
-                                        <p>
-                                            The failure in the right arm was primarily due to insufficient support. Overhangs in the model, such as the outstretched arm and other unsupported sections, lacked stability during the print. Without adequate support, the filament had no base to adhere to, leading to sagging, uneven layers, and a rough finish.
-                                        </p>
-                                        
-                                        <h4 class="fw-bolder mt-4">2. Cooling</h4>
-                                        <p>
-                                            Cooling also played a role, particularly for the right arm. For small and thin structures, like the arm and fingers, the layers did not have enough time to cool and solidify before the printer moved on to the next layer. This resulted in soft, warped layers. In addition, the lack of supports worsened the deformation.
-                                        </p>
-                                        
-                                        <h4 class="fw-bolder mt-4">3MF vs STL</h4>
-                                        <p>
-                                            Finally, comparing the 3MF file (used for slicing) to the STL file (a basic design file), I learned that the key difference between these two file types is that 3MF files can store additional data, including material, color, texture, orientation, supports, and printing parameters, whereas STL files cannot. As a result, the name tag print file automatically incorporated the color change, but an STL file would not be able to do so.
-                                        </p>
-                                        
-                                        <!-- CAM Settings Section -->
-                                        <h4 class="fw-bolder mt-4">CAM Settings for Second Print:</h4>
-                                        <ul>
-                                            <li><strong>Used Filament (g):</strong> 11.90</li>
-                                            <li><strong>Filament:</strong> Prusament PLA</li>
-                                            <li><strong>Printing Time:</strong> 2 Hours and 52 Minutes</li>
-                                            <li><strong>Layer Height:</strong> 0.3mm</li>
-                                            <li><strong>Infill Percentage:</strong> 15%</li>
-                                        </ul>
-                        
-                                        <!-- Image Container at the Bottom (No Modal for This One) -->
-                                        <div class="d-flex justify-content-center mt-3">
-                                            <img class="img-fluid" src="assets/Project1/Torturetest.png" width="325" height="300" alt="Torture Test">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Modal for Enlarged Torture Settings Image -->
-                        <div class="modal fade" id="tortureSettingsModal" tabindex="-1" aria-labelledby="tortureSettingsModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="tortureSettingsModalLabel">Torture Settings</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body text-center">
-                                        <img src="assets/Project1/torturesettings.png" class="img-fluid rounded shadow" alt="Torture Settings" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Bootstrap JS (Ensure this is included at the bottom of your HTML file) -->
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-                        
-                        </body>
-                        </html>
-                        
-   </div>
-
-                    <div class="container px-5 mb-5">
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-11 col-xl-9 col-xxl-8">
-                                <!-- Project Card 1-->
+<!-- Project Card 4-->
                                 
-                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                    <div class="card-body p-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="p-5">
-                                                <h3 class="fw-bolder">Reflection</h3>
-                                                <p>
-                                                    Both prints taught me a lot about 3D printing. The name tag was a great way to get the hang of slicing and printing, while the torture test really showed me how tricky it can be to print more complex designs. Looking ahead, I plan to tweak my settings, especially for supports and cooling, to improve the overall print quality.
-                                                </p>
-                                                <p>
-                                                    With each project, I'm feeling more confident using the Prusa MINI+ and getting better at the whole process.
-                                                </p>
-                                                <p>
-                                                    I’m really excited to keep experimenting with new designs and learn even more about 3D printing along the way!
-                                                </p>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                
-                            </div>
-                        </div>
-                    </div>
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">                    
+        <!-- Image Gallery with Paragraph Above -->
+<div class="d-flex gap-3 justify-content-center">
+    <!-- First Image -->
+    <a href="#" data-bs-toggle="modal" data-bs-target="#modalHandbuild">
+        <img class="img-fluid" src="assets/Project4/handbuild.jpg" 
+             style="width: 350px; height: 250px; margin: 0 20px 20px 0; cursor: pointer;">
+    </a>
+
+    <!-- Second Image -->
+    <a href="#" data-bs-toggle="modal" data-bs-target="#modalBend">
+        <img class="img-fluid" src="assets/Project4/bend.jpg" 
+             style="width: 200px; height: 250px; margin: 0 20px 20px 0; cursor: pointer;">
+    </a>
+
+    <!-- Third Image -->
+    <a href="#" data-bs-toggle="modal" data-bs-target="#modalFinalHand">
+        <img class="img-fluid" src="assets/Project4/finalhand.jpg" 
+             style="width: 200px; height: 250px; margin: 0 20px 20px 0; cursor: pointer;">
+    </a>
+</div>
+
+<!-- Paragraph to describe the assembly process -->
+<h3 class="fw-bolder">Assembling the Hand and Reflection</h3>
+<p>
+    To assemble the hand, we used this <a href="https://cdn.thingiverse.com/assets/dd/6b/45/30/fc/Phoenix_v2_assembly_guide.pdf" target="_blank">PDF file</a>, which we found very helpful. We relied a ton on the pictures.
+</p>
+<p>
+    The assembly process went smoothly overall, but we ran into a few challenges. One issue was figuring out which pins to use. Since there were no clear instructions, we had to test each pin until we found the right fit, which took extra time. Labeling the pins in the instructions would make this step much easier.
+</p>
+<p>
+    Another challenge was bending the “thermo gauntlet,” the piece that covers the arm. We initially thought it was a simple bend, but when we tried to attach it to the hand shell, the holes didn’t align. We had to reheat and reshape it multiple times to get the correct fit.
+</p>
+<p>
+    Tying the strings to the fingers was also tricky. The instructions were helpful, but I originally thought we needed five separate strings—one for each finger. It turned out that only two long strings were needed to control four fingers, plus one for the thumb. Since we had already cut them into four strands, we had to tie them back together. We watched a video tutorial for guidance.
+</p>
+<p>
+    Lastly, we didn’t use the palm mesh because we wanted to fit our hand inside, so we attached a handle instead. However, for those without hands, the palm mesh would be necessary and would need to be heated to create a curve. Despite these small issues, the assembly went well overall.
+</p>
+
+
+<!-- Modal for Handbuild Image -->
+<div class="modal fade" id="modalHandbuild" tabindex="-1" aria-labelledby="modalHandbuildLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalHandbuildLabel">Enlarged Image</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body text-center p-4" style="background-color: white;">
+                <!-- Image -->
+                <img class="img-fluid rounded shadow" src="assets/Project4/handbuild.jpg" alt="Hand Build Image" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Bend Image -->
+<div class="modal fade" id="modalBend" tabindex="-1" aria-labelledby="modalBendLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalBendLabel">Enlarged Image</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-4" style="background-color: white;">
+                <!-- Image -->
+                <img class="img-fluid rounded shadow" src="assets/Project4/bend.jpg" alt="Bend Image" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Final Hand Image -->
+<div class="modal fade" id="modalFinalHand" tabindex="-1" aria-labelledby="modalFinalHandLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalFinalHandLabel">Enlarged Image</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-4" style="background-color: white;">
+                <!-- Image -->
+                <img class="img-fluid rounded shadow" src="assets/Project4/finalhand.jpg" alt="Final Hand Image" />
+            </div>
+        </div>
+    </div>
+</div>
+   </div>
         </section>
+        
+        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+            <div class="card-body p-0">
+                <div class="d-flex justify-content-center">
+                    <div class="p-5" style="max-width: 800px; width: 100%; padding: 0;">
+                        <h3 class="fw-bolder">Extend, critique & reflect</h3>
+                        <p class="challenge-paragraph" style="margin-top: -10px;">
+                            For the next part of the project, we were asked to add a modification to our design. At this point, we wanted to design something fun and unique to modify the e-NABLE hand. After brainstorming a few ideas, we decided to add Wolverine claws to the prosthetic. My partner was immediately on board with the idea, so we proceeded with designing it. I began by sketching out the basic concept of the claw and how it would integrate with the hand.
+                        </p>
+                        <p>
+                            The design starts with a base that would be securely fixed to the e-NABLE hand. I incorporated a hole in the base, allowing it to be screwed into place. On top of the base, I added three half-circular shapes, each with a 10mm hole. These holes would serve as the pivot points for a hinge mechanism that would allow the claw to move. The claw itself would be divided into three movable parts, each controlled by the hinge system.
+                        </p>
+                        <p>
+                            This initial design is just a starting point, and I’m aware there are areas that need further refinement. For example, in my sketch, I drew the claw in a tense position, but I’ll need to smooth out the mechanism to ensure the claws can extend and retract seamlessly. There’s still work to be done to ensure the claw functions smoothly and safely, but I’m excited to continue refining the design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
     </body>
 </html>
